@@ -8,7 +8,9 @@ body{
   min-height: 100vh;
   background-color: lightgray;
 }
-
+.body-fix{
+  overflow: hidden;
+}
 
 
 #bg{
@@ -109,4 +111,5 @@ main{
   font-size: 1.6rem;
   border-radius: 20px 0 10px 0;
   transform: rotate(0.2deg);
+  overflow-y: auto;
 }
