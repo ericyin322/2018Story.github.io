@@ -1,32 +1,86 @@
 *{
-
+  /*color: white;*/
   box-sizing: border-box;
   margin: 0;
-  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold";
+  font-family: "Noto Sans TC", sans-serif;
 }
 body{
   min-height: 100vh;
   background-color: lightgray;
 }
-img{
-  width: 100;
+
+
+
+#bg{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+#bg img{
+  margin:-30% auto 0;
+  width: 1300px;
+  }
+#slogan{
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  padding: 10vh 50px 0;
+  color:white;
+  text-align: center;
+  font-size: 8rem;
+  z-index: 0;
+}
+
+#content{
+  padding: 10px 0;
+  margin: 70vh auto 0;
+  background-color: white;
 }
 main{
   width: 80vw;
-  margin: 20px auto;
+  margin: 10px auto;
 }
 .row{
   display: flex;
+
+}
+@media (max-width: 500px){
+  .row{
+    flex-direction: column;
+  }
+  #slogan-dead{
+    display: none;
+  }
 }
 .col{
   flex:1;
-  min-height: 300px;
-  border:1px solid pink;
-  border-radius: 10px;
-  margin: 5px;
-  padding: 10px;
-}
+  height: 300px;
+  margin: 10px 10px;
 
+}
+.story{
+  overflow: hidden;
+  padding: 10px 20px;
+  border:1px solid #051426;
+  position: relative;
+  transform: rotate(-1deg);
+  border-radius: 20px 0 10px 0;
+
+}
+.story::after{
+  content: "";
+  position: absolute;
+  border:1px solid gold;
+  top:5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  transform: rotate(2deg);
+  z-index: 0;
+}
 .story-intro{
   padding: 5px;
 }
@@ -42,12 +96,17 @@ main{
   left:0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(50,50,50,.8);
 }
 #msg-box{
-  margin: 30px auto;
-  background-color: blueviolet;
-  width: 500px;
-  min-height: 300px;
-  padding: 10px;
+  color: #fffacc;
+  margin: 10vh auto 0;
+  background-color: #270440;
+  opacity: 0.9;
+  width: 90vw;
+  height: 70vh;
+  padding: 20px;
+  font-size: 1.6rem;
+  border-radius: 20px 0 10px 0;
+  transform: rotate(0.2deg);
 }
