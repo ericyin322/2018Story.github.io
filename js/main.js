@@ -17,11 +17,5 @@ $(document).ready(function() {
 
 	});
 
-	$(document).on("scroll", function(){
-		let maskHeight = $("#content").offset().top-$(window).scrollTop();
-		let cssStr = `polygon(0% ${maskHeight}px, 0% 100%,100% 100%,100% ${maskHeight}px)`
-		$("#content-bg").css('clip-path',cssStr)
-
-	})
 
 })

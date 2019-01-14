@@ -48,11 +48,13 @@ body{
 #content{
   padding: 10px 0;
   margin: 70vh auto 0;
-  background-color: white;
+
   position: relative;
-  /*background-color: #1f293d;*/
   overflow: hidden;
   min-height: 100vh;
+  background: #fff url('./d4631913d3b74ba884b9094cdded542c.jpg') center 0 no-repeat fixed;
+  background-size: 100% auto;
+
 }
 
 #content-bg{
@@ -97,6 +99,7 @@ main{
   border:1px solid #051426;
   position: relative;
   /*transform: rotate(-1deg);*/
+  background-color: rgba(255,255,255,.5);
   border-radius: 20px 0 10px 0;
 }
 
