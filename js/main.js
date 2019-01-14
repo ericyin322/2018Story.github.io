@@ -2,7 +2,10 @@ $(document).ready(function() {
 
 	$(".story").on("click", function(){
 		$("#msg-box").html($(this).find(".story-more").html())
-		$("#popup-box").fadeIn(300);
+		
+		$("#popup-box").fadeIn(300,function(){
+			$("#msg-box").scrollTop(0);
+		});
 		$("body").addClass("body-fix");
 	});
 	
@@ -20,4 +23,5 @@ $(document).ready(function() {
 		$("#content-bg").css('clip-path',cssStr)
 
 	})
+
 })

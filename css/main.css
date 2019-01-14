@@ -4,14 +4,15 @@
 *{
   /*color: white;*/
   box-sizing: border-box;
-  margin: 0;
+  
   font-family: 'Caveat Brush', 'cwTeXFangSong'; 
 }
 
 body{
-  /*min-height: 100vh;*/
+  margin: 0;
   background-color: lightgray;
 }
+
 
 .body-fix{
   overflow: hidden;
@@ -37,10 +38,10 @@ body{
   top:0;
   left: 0;
   right: 0;
-  padding: 10vh 50px 0;
+  padding: 15vh 50px 0;
   color:white;
   text-align: center;
-  font-size: 8rem;
+  font-size: 10rem;
   z-index: 0;
 }
 
@@ -71,9 +72,13 @@ main{
   display: flex;
 
 }
-@media (max-width: 500px){
+@media (max-width: 768px){
   .row{
     flex-direction: column;
+  }
+  #slogan{
+    padding: 15vh 50px 0;
+    font-size: 7rem;
   }
   #slogan-dead{
     display: none;
@@ -108,7 +113,7 @@ main{
 }
 
 .story-intro{
-  height: 250px;
+  height: 200px;
   overflow: hidden;
 }
 
