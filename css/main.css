@@ -53,27 +53,20 @@ body{
   overflow: hidden;
   min-height: 100vh;
   background: #fff url('./d4631913d3b74ba884b9094cdded542c.jpg') center 0 no-repeat fixed;
-  background-size: 100% auto;
+  background-size: 100% 100%;
 
-}
-
-#content-bg{
-  position: fixed;
-  opacity: 0.75;
-  top:0;
-  left:0;
-  width: 100%;
-  clip-path:polygon(0% 70vh, 0% 100%,100% 100%,100% 70vh);
 }
 
 main{
   width: 80vw;
   margin: 10px auto;
 }
+
 .row{
   display: flex;
 
 }
+
 @media (max-width: 768px){
   .row{
     flex-direction: column;
