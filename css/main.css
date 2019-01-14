@@ -1,35 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css');
+
 *{
   /*color: white;*/
   box-sizing: border-box;
   margin: 0;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: 'Caveat Brush', 'cwTeXFangSong'; 
 }
+
 body{
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   background-color: lightgray;
 }
+
 .body-fix{
   overflow: hidden;
 }
 
 
-#bg{
+#head{
   position: fixed;
   top:0;
   left: 0;
   right: 0;
   z-index: -2;
 }
-#bg img{
-  margin:-30% auto 0;
-  width: 1300px;
-  }
+
+#head-bg{
+  margin:-10% auto 0;
+  min-width: 1300px;
+  width: 100%;
+}
+
 #slogan{
   position: absolute;
   top:0;
   left: 0;
   right: 0;
-  padding: 5vh 50px 0;
+  padding: 10vh 50px 0;
   color:white;
   text-align: center;
   font-size: 8rem;
@@ -40,7 +48,21 @@ body{
   padding: 10px 0;
   margin: 70vh auto 0;
   background-color: white;
+  position: relative;
+  /*background-color: #1f293d;*/
+  overflow: hidden;
+  min-height: 100vh;
 }
+
+#content-bg{
+  position: fixed;
+  opacity: 0.75;
+  top:0;
+  left:0;
+  width: 100%;
+  clip-path:polygon(0% 70vh, 0% 100%,100% 100%,100% 70vh);
+}
+
 main{
   width: 80vw;
   margin: 10px auto;
@@ -57,21 +79,22 @@ main{
     display: none;
   }
 }
+
 .col{
   flex:1;
   height: 300px;
   margin: 10px 10px;
-
 }
+
 .story{
   overflow: hidden;
   padding: 10px 20px;
   border:1px solid #051426;
   position: relative;
-  transform: rotate(-1deg);
+  /*transform: rotate(-1deg);*/
   border-radius: 20px 0 10px 0;
-
 }
+
 .story::after{
   content: "";
   position: absolute;
@@ -83,8 +106,10 @@ main{
   transform: rotate(2deg);
   z-index: 0;
 }
+
 .story-intro{
-  padding: 5px;
+  height: 250px;
+  overflow: hidden;
 }
 
 .story-more{
@@ -100,10 +125,11 @@ main{
   height: 100vh;
   background-color: rgba(50,50,50,.8);
 }
+
 #msg-box{
-  color: #fffacc;
+  color: #faff9e;
   margin: 10vh auto 0;
-  background-color: #270440;
+  background-color: #3a0360;
   opacity: 0.9;
   width: 90vw;
   height: 70vh;
